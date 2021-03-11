@@ -10,7 +10,7 @@ export default function Pg(){
         <h3>Página: {pg}</h3>
 
         <p>
-            Este é  um exemplo de uso do next/router
+            Este é  um exemplo de uso do next/router.
         </p>
 
         <Link href="/">
