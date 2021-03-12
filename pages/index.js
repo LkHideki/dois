@@ -16,6 +16,25 @@ export default function Home() {
 			<h2>Título 2</h2>
 			<h6>Author</h6>
 
+			<section>
+				<div>
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">A</a>
+					{/* <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">B</button>
+					<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">C</button> */}
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="collapse multi-collapse" id="multiCollapseExample1">
+							<div>
+								Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<hr />
+			
 			<Link href="./Pasta1/pg1">
 				<Button onClick={()=>{alert('Você quer ir para a página da Pasta 1?')}}>
 					Página 1
