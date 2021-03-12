@@ -14,6 +14,7 @@ export default function Home() {
 		<Container>
 			<h1>Olá mundo!!!</h1>
 			<h2>Título 2</h2>
+			<h6>Author</h6>
 
 			<Link href="./Pasta1/pg1">
 				<Button onClick={()=>{alert('Você quer ir para a página da Pasta 1?')}}>
