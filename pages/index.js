@@ -12,7 +12,7 @@ export default function Home() {
 		</Head>
 
 		<Container>
-			<h1>Olá mundo!</h1>
+			<h1>Olá mundo!!!</h1>
 			<h2>Título 2</h2>
 
 			<Link href="./Pasta1/pg1">
