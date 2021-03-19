@@ -1,60 +1,16 @@
 import Head from 'next/head'
-import { Button, Container } from "react-bootstrap";
-import Root1 from "../components/comp1/root1";
-import Root0 from "../components/root0"
-import Link from "next/link"
+import { Container } from "react-bootstrap";
+import {useState} from 'react'
 
 export default function Home() {
+
 	return (<div>
 		<Head>
-			<title>Feito com o Next.js</title>
-			<link rel="icon" href="/favicon.ico" />
+			<title>GT</title>
 		</Head>
 
 		<Container>
-			<h1>Olá mundo!!!</h1>
-			<h2>Título 2</h2>
-			<h6>Author</h6>
-
-			<section>
-				<div>
-					<a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">A</a>
-					{/* <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">B</button>
-					<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">C</button> */}
-				</div>
-				<div class="row">
-					<div class="col">
-						<div class="collapse multi-collapse" id="multiCollapseExample1">
-							<div>
-								Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<hr />
-			
-			<Link href="./Pasta1/pg1">
-				<Button onClick={()=>{alert('Você quer ir para a página da Pasta 1?')}}>
-					Página 1
-				</Button>
-			</Link>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan arcu eros, a ultrices quam ornare eget. Fusce nisl tellus, consequat sit amet dui sed, rutrum laoreet sapien. Morbi efficitur neque in tellus eleifend venenatis. Aliquam sodales condimentum mauris. Donec vulputate finibus nibh, ac consectetur nibh interdum ut. Sed eu mauris leo. Nullam vitae mauris a magna elementum malesuada non at dui.</p>
-
-			<p>
-			Praesent interdum consequat diam, eu bibendum nibh suscipit vel. Aenean ultrices lacinia lacinia. Quisque ut velit enim. Nullam malesuada at dui quis pharetra. Aenean porttitor nisl ut ipsum eleifend, id sagittis lacus auctor. Nulla facilisi. Proin egestas, lectus in tincidunt laoreet, est nisi vehicula sapien, at auctor magna odio id nibh. Nulla ut molestie massa, et molestie lectus.
-			</p>
-
-			<p>
-			Sed vulputate enim eu fringilla fermentum. Aliquam rhoncus tellus lacus, id eleifend arcu luctus ut. Phasellus vehicula arcu ex, quis condimentum magna congue ut. Ut consequat dui eget turpis cursus sodales. Integer sodales vehicula ex ac venenatis. Fusce convallis rhoncus massa, aliquam luctus felis varius in. Maecenas molestie laoreet molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec imperdiet vulputate est, vel tristique tortor congue ut. Phasellus efficitur malesuada ligula. In mollis nec dolor a congue. Sed quis tortor vitae est ullamcorper pretium. Duis scelerisque, mi eu viverra ultricies, lorem ante viverra erat, at luctus neque enim consequat felis. Nunc viverra risus justo, nec imperdiet massa pellentesque et. Vivamus quam sem, efficitur mollis sapien eu, pellentesque feugiat magna. Vivamus non rhoncus est.
-			</p>
-		</Container>
-
-		<Container>
-			<Root0 />
-			<Root1 /> 
+			<h1>Sistema de votação</h1>
 		</Container>
 	</div>)
 }
